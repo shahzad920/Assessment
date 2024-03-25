@@ -5,10 +5,10 @@ export const _Blank = () => {
     return (
         <Block flex>
             <Content padder>
-                <Text margin={{ Top: 18 }} size="H1" font="SemiBold">
+                <Text margin={{ Top: 18 }} size="H1" font="Medium">
                     Content type
                 </Text>
-                <Text lineHeight={35} color="primary" font="Medium">
+                <Text style={{ color: '#D0CFD1' }}>
                     Choose a content type that best fits your needs.
                 </Text>
                 <Form onSubmit={() => new Promise(resolve => { })}>

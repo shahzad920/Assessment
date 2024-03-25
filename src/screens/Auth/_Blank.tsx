@@ -26,14 +26,14 @@ export const _Blank = () => {
         <Block flex backgroundColor={Colors.primary}>
             <Content padder>
                 <StepIndicatorHandler />
-                <Text color={'onPrimary'} margin={{ Top: 24 }} size="H2" >
+                <Text color={'onPrimary'} margin={{ Top: 24 }} size="H2" font="Medium">
                     Content type
                 </Text>
-                <Text color={'onPrimary'} size='H6' margin={{ Top: 8 }} >
+                <Text style={{ color: '#D0CFD1' }} size='H6' margin={{ Top: 2 }} >
                     Choose a content type that best fits your needs.
                 </Text>
                 <Block height={1} backgroundColor='#3A3940' margin={{ Vertical: 32 }} />
-                <Text color={'onPrimary'} margin={{ Bottom: 12 }} size="H5" >
+                <Text color={'onPrimary'} margin={{ Bottom: 12 }} font="Medium" size="H5" >
                     What type of content are you creating?
                 </Text>
 
@@ -44,7 +44,7 @@ export const _Blank = () => {
                     bgColorOnActive={'#523FD7'}
                     type={'tag'}
                 />
-                <Text color={'onPrimary'} margin={{ Vertical: 24 }} size="H5" >
+                <Text color={'onPrimary'} margin={{ Vertical: 24 }} font="Medium" size="H5" >
                     {`Which type of “${selectedContent[0]['title']}“ content are you\ncreating?`}
                 </Text>
                 <Dropdown
@@ -80,7 +80,7 @@ export const _Blank = () => {
                     }}
 
                 />
-                <Text color={'onPrimary'} margin={{ Top: 24 }} size="H5" >
+                <Text color={'onPrimary'} margin={{ Top: 24 }} font="Medium" size="H5" >
                     Set the number of words for output text.
                 </Text>
                 <Block height={55} row align='center' margin={{ Vertical: 16 }} padding={{ Horizontal: 12 }} backgroundColor='#09090D' style={{ borderRadius: 12 }}>

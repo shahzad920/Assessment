@@ -30,8 +30,8 @@ export const AuthStack = () => {
             <Stack.Screen component={_Blank} name="_Blank"
                 options={{
                     headerTitle: () => <Block align='center'>
-                        <Text color={'onPrimary'} size={'H5'}>Media management</Text>
-                        <Text color={'onPrimary'} size={'H6'}>Draft campaign</Text>
+                        <Text color={'onPrimary'} size={'H5'} font="Medium">Media management</Text>
+                        <Text style={{ color: '#D0CFD1' }} size={'H6'}>Draft campaign</Text>
 
                     </Block>
                 }} />
