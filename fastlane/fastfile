@@ -1,0 +1,31 @@
+platform :android do 
+    lane :beta do |options|
+    gradle(task: 'clean', project_dir: 'android/')
+    gradle(
+    task: 'assemble',
+    build_type: options[:buildType],
+    project_dir: 'android/'
+    )
+    copy_artifacts(
+        artifacts: [ "#{lane_context[SharedValues::GRADLE_APK_OUTPUT_PATH]}"],
+        target_path: "#{options[:outputPath]}"
+      )
+     sh("mv '#{options[:outputPath]}/app-release.apk' '#{options[:outputPath]}/#{options[:outputName]}.apk'")
+     
+    end
+end
+platform :ios do 
+    lane :beta do |options|
+        gym(
+            workspace:"ios/MobileTestingScreen.xcworkspace",
+            scheme: "MobileTestingScreen",
+            configuration: options[:buildType],
+            output_name: "app-release.ipa",
+            output_directory:options[:outputPath],
+            clean:true,
+            skip_package_pkg:true,
+            export_method:"development"
+        )
+        sh("mv '#{options[:outputPath]}/app-release.ipa' '#{options[:outputPath]}/#{options[:outputName]}.ipa'")
+     end
+ end

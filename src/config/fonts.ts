@@ -1,0 +1,16 @@
+export const Fonts = Object.freeze({
+  Black: undefined,
+  BlackItalic: undefined,
+  Bold:undefined,
+  BoldItalic:  undefined,
+  ExtraBold: undefined,
+  ExtraBoldItalic: undefined,
+  Italic: undefined,
+  Light: undefined,
+  LightItalic: undefined,
+  Medium: undefined,
+  MediumItalic: undefined,
+  Regular: undefined,
+  SemiBold: undefined,
+  SemiBoldItalic: undefined,
+});
