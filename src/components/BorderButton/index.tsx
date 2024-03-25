@@ -32,7 +32,7 @@ const makeStyles = (props: any) => {
             backgroundColor: props.backgroundColor
                 ? props.backgroundColor
                 : 'white',
-            paddingHorizontal: 32,
+            paddingHorizontal: 24,
 
             height: 50,
             borderRadius: 30,
