@@ -8,7 +8,6 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "build": "sh scripts/app-build.sh",
     "postinstall": "sh scripts/post-install.sh"
   },
   "dependencies": {
